@@ -53,7 +53,8 @@ if page=="Home":
     with c2: st.markdown('<div class="card"><h2>⌕ Check Message / Link</h2><p>Detect urgency, credential requests, shortened links and other common phishing indicators.</p></div>',unsafe_allow_html=True)
     st.write(""); st.markdown("### Simple merchant flow")
     for col,(n,t) in zip(st.columns(4),[("01","Paste / upload"),("02","Scan signals"),("03","See evidence"),("04","Verify safely")]):
-        with col: st.markdown(f"**{n}**  
+    with col:
+    st.markdown(f"*{n}*")
 {t}")
     st.info("Important: a screenshot alone cannot prove that money reached a bank account. Confirm payment in the trusted banking/payment app before handing over goods.")
 
